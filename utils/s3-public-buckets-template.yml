@@ -1,0 +1,18 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Resources:
+  PublicBucket1:
+    Type: AWS::S3::Bucket
+    Properties:
+      AccessControl: PublicRead
+  PublicBucket2:
+    Type: AWS::S3::Bucket
+    Properties:
+      AccessControl: PublicRead
+  PrivateBucket1:
+    Type: AWS::S3::Bucket
+    Properties:
+      AccessControl: Private
+  PrivateBucket2:
+    Type: AWS::S3::Bucket
+    Properties:
+      AccessControl: Private
